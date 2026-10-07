@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VeloTrack</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="card">
+    <header>
+      <h1>Network Speed</h1>
+      <button id="unit" class="chip" title="Switch units"></button>
+    </header>
+
+    <div id="banner" class="banner" hidden></div>
+
+    <section class="hero">
+      <div class="big"><span class="arrow">↓</span><span id="heroDown">—</span></div>
+      <div class="big up"><span class="arrow">↑</span><span id="heroUp">—</span></div>
+    </section>
+
+    <section class="ping">
+      <span class="label">Ping</span>
+      <span id="heroPing" class="pingval">—</span>
+    </section>
+
+    <hr>
+
+    <dl>
+      <div><dt>Download</dt><dd id="rowDown">—</dd></div>
+      <div><dt>Upload</dt><dd id="rowUp">—</dd></div>
+      <div><dt>Ping</dt><dd id="rowPing">—</dd></div>
+      <div><dt>Connection</dt><dd id="rowType">—</dd></div>
+      <div><dt>Adapter</dt><dd id="rowAdapter">—</dd></div>
+      <div><dt>Status</dt><dd id="rowStatus">—</dd></div>
+    </dl>
+
+    <footer id="updated">Waiting for network data...</footer>
+  </main>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

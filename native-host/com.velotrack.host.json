@@ -1,0 +1,9 @@
+{
+    "name":  "com.velotrack.host",
+    "description":  "VeloTrack native network statistics helper",
+    "path":  "D:\\VeloTrack (2)\\native-host\\velotrack_host.bat",
+    "type":  "stdio",
+    "allowed_origins":  [
+                            "chrome-extension://oocffalidgiffegidblfnmalpiipjlkm/"
+                        ]
+}
